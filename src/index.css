@@ -1,0 +1,35 @@
+/* neudental v1 - Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+
+  --color-primary: #0B1341;
+  --color-secondary: #0557BC;
+  --color-mint: #E0F2F1;
+}
+
+/* Scroll smooth fallback and animations */
+html {
+  scroll-behavior: smooth;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Premium shadows and details */
+.premium-shadow {
+  box-shadow: 0 10px 40px -10px rgba(11, 19, 65, 0.04);
+}
+
+.ambient-glow {
+  box-shadow: 0 20px 50px -12px rgba(5, 87, 188, 0.08);
+}
