@@ -1,0 +1,52 @@
+// neudental v1 - Static Data
+// NOTE: For the complete version with full SEO descriptions, refer to Google AI Studio project
+import { Treatment, Doctor, Testimonial, Symptom, FAQItem } from './types';
+
+export const TREATMENTS: Treatment[] = [
+  { id: 'checkup', name: 'Regular Check-up', category: 'preventive', description: 'Comprehensive dental examination to assess your oral health and detect any issues early.', seoKeywords: ['dental checkup Kodungaiyur', 'dental exam Chennai'], duration: '30-45 minutes', priceRange: '₹300-₹500', startingPrice: 300, iconName: 'Search', features: ['Oral examination', 'X-ray review', 'Treatment planning', 'Oral hygiene advice'] },
+  { id: 'cleaning', name: 'Dental Cleaning', category: 'preventive', description: 'Professional teeth cleaning and scaling to remove plaque, tartar and stains.', seoKeywords: ['teeth cleaning Chennai', 'dental scaling Kodungaiyur'], duration: '45-60 minutes', priceRange: '₹800-₹1500', startingPrice: 800, iconName: 'Sparkles', features: ['Ultrasonic scaling', 'Polishing', 'Fluoride treatment', 'Oral hygiene instructions'] },
+  { id: 'imaging', name: 'Dental Imaging', category: 'preventive', description: 'Digital X-rays and imaging for accurate diagnosis with minimal radiation exposure.', seoKeywords: ['dental X-ray Chennai', 'digital radiography'], duration: '15-30 minutes', priceRange: '₹200-₹800', startingPrice: 200, iconName: 'Scan', features: ['Digital X-rays', 'Low radiation', 'Instant results', 'High-resolution images'] },
+  { id: 'filling', name: 'Cavity Filling', category: 'restorative', description: 'Tooth-colored composite fillings to restore decayed or damaged teeth naturally.', seoKeywords: ['tooth filling Chennai', 'composite filling Kodungaiyur'], duration: '30-60 minutes', priceRange: '₹500-₹2000', startingPrice: 500, iconName: 'Shield', features: ['Tooth-colored material', 'Mercury-free', 'Single sitting', 'Natural appearance'] },
+  { id: 'extraction', name: 'Tooth Extraction', category: 'restorative', description: 'Safe and painless tooth removal with modern anesthesia for minimal discomfort.', seoKeywords: ['tooth extraction Chennai', 'painless extraction Kodungaiyur'], duration: '20-45 minutes', priceRange: '₹300-₹1500', startingPrice: 300, iconName: 'Scissors', features: ['Local anesthesia', 'Minimal discomfort', 'Post-care instructions', 'Same day procedure'] },
+  { id: 'rct', name: 'Root Canal Treatment (RCT)', category: 'specialized', description: 'Advanced rotary RCT to save infected teeth and eliminate pain in single or multiple sittings.', seoKeywords: ['root canal treatment Chennai', 'RCT Kodungaiyur', 'single sitting RCT Chennai'], duration: '60-90 minutes', priceRange: '₹3000-₹8000', startingPrice: 3000, iconName: 'Activity', features: ['Rotary endodontics', 'Single sitting possible', 'Crown placement', 'Pain-free procedure'] },
+  { id: 'gum-disease', name: 'Gum Disease Treatment', category: 'specialized', description: 'Comprehensive periodontal therapy to treat gum disease and restore gum health.', seoKeywords: ['gum disease treatment Chennai', 'periodontal therapy Kodungaiyur'], duration: '60-120 minutes', priceRange: '₹1500-₹5000', startingPrice: 1500, iconName: 'Heart', features: ['Deep cleaning', 'Antibiotic therapy', 'Gum surgery if needed', 'Regular monitoring'] },
+  { id: 'crowns-bridges', name: 'Crowns & Bridges', category: 'restorative', description: 'Custom-made ceramic crowns and bridges to restore and protect damaged teeth.', seoKeywords: ['dental crown Chennai', 'tooth bridge Kodungaiyur'], duration: '2-3 visits', priceRange: '₹4000-₹12000', startingPrice: 4000, iconName: 'Crown', features: ['Ceramic crowns', 'Metal-free options', 'Natural appearance', 'Long lasting'] },
+  { id: 'ortho', name: 'Orthodontic Treatment', category: 'cosmetic', description: 'Modern clear aligners and braces to straighten teeth and improve your smile.', seoKeywords: ['Invisalign Kodungaiyur', 'clear aligners Chennai', 'braces Chennai'], duration: '12-24 months', priceRange: '₹35000-₹1,50,000', startingPrice: 35000, iconName: 'GitBranch', features: ['Clear aligners', 'Invisible treatment', 'Removable option', 'Expert planning'] },
+  { id: 'cosmetic', name: 'Cosmetic Dentistry', category: 'cosmetic', description: 'Teeth whitening, veneers, and complete smile makeovers for a confident smile.', seoKeywords: ['teeth whitening Chennai', 'dental veneers Kodungaiyur', 'smile makeover'], duration: 'Varies', priceRange: '₹5000+', startingPrice: 5000, iconName: 'Star', features: ['Teeth whitening', 'Veneers', 'Smile design', 'Natural results'] },
+  { id: 'implants', name: 'Dental Implants', category: 'specialized', description: 'Permanent titanium dental implants to replace missing teeth with a natural look and feel.', seoKeywords: ['dental implants Chennai', 'tooth implant Kodungaiyur'], duration: '3-6 months total', priceRange: '₹25000-₹50000', startingPrice: 25000, iconName: 'Anchor', features: ['Titanium implants', 'Permanent solution', 'Natural feel', 'Bone preservation'] },
+  { id: 'dentures', name: 'Dentures', category: 'restorative', description: 'Custom removable dentures for complete or partial tooth replacement.', seoKeywords: ['dentures Chennai', 'full denture Kodungaiyur'], duration: '3-5 visits', priceRange: '₹8000-₹30000', startingPrice: 8000, iconName: 'Smile', features: ['Custom fit', 'Natural appearance', 'Easy maintenance', 'Comfortable wear'] },
+];
+
+export const DOCTOR: Doctor = {
+  name: 'Dr. Swetha',
+  title: 'BDS, FGDS',
+  specialty: 'Dental Surgeon & Clinical Director',
+  experience: '5+ years of clinical experience',
+  education: 'Saveetha Dental University',
+  bio: 'Dr. Swetha is a dedicated dental professional with 5+ years of experience in general and cosmetic dentistry. A proud alumna of Saveetha Dental University, she specializes in providing gentle, comprehensive dental care using the latest technology. Her patient-first approach ensures every treatment is comfortable, transparent, and of the highest clinical standard.',
+  imageAlt: 'Dr. Swetha - Lead Dentist at neudental',
+  avatarUrl: '',
+  skills: ['Root Canal Treatment', 'Smile Design', 'Clear Aligners', 'Dental Implants', 'Cosmetic Dentistry'],
+};
+
+export const TESTIMONIALS: Testimonial[] = [
+  { id: 'test-1', name: 'Viji', role: 'Patient', rating: 5, text: 'I had a fantastic experience getting my teeth cleaned here! Dr. Swetha was extremely friendly, and the hygienist did a thorough job while making sure I was completely comfortable. The clinic is spotless, and I received great advice for my daily routine. Highly recommend!', treatmentRecceived: 'Dental Cleaning', imgUrl: '', imgAlt: 'Viji - neudental patient', initials: 'V' },
+  { id: 'test-2', name: 'Thamizhselvi', role: 'Patient', rating: 5, text: 'Had my filling done here. The treatment was quick and completely painless. Doctor is very skilled and polite. I strongly recommend this clinic.', treatmentRecceived: 'Cavity Filling', imgUrl: '', imgAlt: 'Thamizhselvi - neudental patient', initials: 'T' },
+  { id: 'test-3', name: 'Aadhithya S', role: 'Patient', rating: 5, text: 'I visited Dr.Swetha and did my tooth cleaning and root canal treatment along with crown fixing. The treatment plan was good and loved the minimal clinic setup.', treatmentRecceived: 'Root Canal Treatment', imgUrl: '', imgAlt: 'Aadhithya S - neudental patient', initials: 'A' },
+  { id: 'test-4', name: 'Geetha Rajasekaran', role: 'Patient', rating: 5, text: 'Excellent service! Dr. Swetha is very professional and made my root canal completely painless. The clinic is clean and modern. Would definitely recommend to family and friends.', treatmentRecceived: 'Root Canal Treatment', imgUrl: '', imgAlt: 'Geetha Rajasekaran - neudental patient', initials: 'G' },
+];
+
+export const SYMPTOMS: Symptom[] = [
+  { id: 'symp-1', expression: 'Toothache or Throbbing Pain', description: 'Persistent pain in one or more teeth, especially when biting.', possibleCause: 'Tooth decay, abscess, or pulp infection', recommendedTreatment: 'rct', urgency: 'urgent' },
+  { id: 'symp-2', expression: 'Bleeding or Swollen Gums', description: 'Gums that bleed during brushing or appear red and swollen.', possibleCause: 'Gingivitis or periodontal disease', recommendedTreatment: 'gum-disease', urgency: 'moderate' },
+  { id: 'symp-3', expression: 'Crooked or Crowded Teeth', description: 'Misaligned teeth affecting your bite and appearance.', possibleCause: 'Malocclusion or overcrowding', recommendedTreatment: 'ortho', urgency: 'routine' },
+  { id: 'symp-4', expression: 'Discolored or Stained Teeth', description: 'Yellow, brown or grey discoloration affecting your smile confidence.', possibleCause: 'Staining, aging, or enamel erosion', recommendedTreatment: 'cosmetic', urgency: 'routine' },
+];
+
+export const FAQS: FAQItem[] = [
+  { id: 'faq-1', question: 'Is root canal treatment painful?', answer: 'No! Modern root canal treatment using rotary endodontics is virtually painless. Dr. Swetha uses advanced local anesthesia and gentle techniques to ensure you are comfortable throughout the procedure. Most patients are surprised at how easy it is.', category: 'treatment' },
+  { id: 'faq-2', question: 'How often should I visit the dentist?', answer: 'We recommend visiting neudental every 6 months for a regular check-up and professional cleaning. However, if you have specific dental concerns or ongoing treatments, Dr. Swetha may recommend more frequent visits.', category: 'appointment' },
+  { id: 'faq-3', question: 'Do you offer clear aligners / Invisalign?', answer: 'Yes! We offer modern orthodontic solutions including clear aligners for straightening teeth discreetly. Dr. Swetha will assess your case and recommend the best treatment plan during a consultation.', category: 'treatment' },
+  { id: 'faq-4', question: 'What are your clinic timings?', answer: 'We are open Monday to Saturday: 9:00 AM - 1:00 PM and 4:00 PM - 8:00 PM. Sunday: 9:00 AM - 1:00 PM only. We are closed on Sunday evenings. You can book appointments via WhatsApp or our online form.', category: 'appointment' },
+  { id: 'faq-5', question: 'How do I book an appointment?', answer: 'You can book an appointment by: (1) Using the booking form on this website, (2) WhatsApp at +91 9342367446, or (3) Calling us directly. Walk-ins are also welcome during clinic hours.', category: 'appointment' },
+];
