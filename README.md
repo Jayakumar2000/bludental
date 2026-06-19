@@ -170,3 +170,6 @@ After deployment, your site will be live at:
 ## License
 
 Private - All rights reserved © neudental 2024-2025
+
+
+<!-- Vercel deployment trigger: 2026-06-19T05:56:03.523Z -->
