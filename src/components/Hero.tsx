@@ -1,0 +1,60 @@
+import React from 'react';
+import { ShieldCheck, Star, Sparkles, MapPin, Award } from 'lucide-react';
+
+interface HeroProps {
+onOpenBooking: () => void;
+onExploreTreatments: () => void;
+}
+
+export default function Hero({ onOpenBooking, onExploreTreatments }: HeroProps) {
+return (
+<section className="relative overflow-hidden bg-gradient-to-br from-white via-surface-alt to-[#EEF5FC] py-16 lg:py-24 px-margin-mobile md:px-margin-desktop">
+<div className="absolute top-1/4 left-10 w-72 h-72 rounded-full bg-secondary/5 blur-3xl -z-10" />
+<div className="absolute bottom-10 right-10 w-96 h-96 rounded-full bg-mint/35 blur-3xl -z-10" />
+<div className="max-w-[1280px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div className="lg:col-span-7 flex flex-col items-start gap-6">
+<div className="inline-flex items-center gap-2 bg-[#E0F2F1] text-secondary border border-secondary/10 px-4 py-1.5 rounded-full select-none">
+<MapPin className="w-4 h-4 text-secondary" />
+<span className="font-sans text-xs font-semibold tracking-wide uppercase">
+Best Dental Clinic in Kodungaiyur, Chennai
+</span>
+</div>
+<h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-5xl text-primary leading-tight font-bold tracking-tight">
+Complete Dental Care <br />
+<span className="text-secondary italic font-light">for You &amp; Your Family</span>
+</h1>
+<p className="font-sans text-base md:text-lg text-on-surface-variant max-w-xl leading-relaxed">
+Experience premium-grade clinical sterilizations and expert treatments including <strong>Rotary Root Canals (RCT)</strong>,
+<strong> Invisalign Clear Aligners</strong>, and <strong>Dental Implants</strong> with absolute patient-first care, high safety, and gentle precision techniques.
+</p>
+<div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 w-full max-w-lg font-sans text-sm">
+<div className="flex items-center gap-2.5 text-on-surface"><div className="w-5 h-5 rounded-full bg-secondary/10 flex items-center justify-center text-secondary"><ShieldCheck className="w-3.5 h-3.5" /></div><span>Same-Day Priority Booking</span></div>
+<div className="flex items-center gap-2.5 text-on-surface"><div className="w-5 h-5 rounded-full bg-secondary/10 flex items-center justify-center text-secondary"><ShieldCheck className="w-3.5 h-3.5" /></div><span>Class-B Dry Heat Sterilizations</span></div>
+<div className="flex items-center gap-2.5 text-on-surface"><div className="w-5 h-5 rounded-full bg-secondary/10 flex items-center justify-center text-secondary"><ShieldCheck className="w-3.5 h-3.5" /></div><span>No Hidden Lab Charges</span></div>
+<div className="flex items-center gap-2.5 text-on-surface"><div className="w-5 h-5 rounded-full bg-secondary/10 flex items-center justify-center text-secondary"><ShieldCheck className="w-3.5 h-3.5" /></div><span>5+ Years Expert Surgeon Care</span></div>
+</div>
+<div className="flex flex-col sm:flex-row gap-4 pt-4 w-full sm:w-auto">
+<button onClick={onOpenBooking} className="bg-primary text-white hover:bg-secondary cursor-pointer shadow-xl shadow-primary/10 hover:shadow-secondary/20 hover:-translate-y-0.5 active:translate-y-0 px-8 py-4 rounded-xl font-sans text-sm tracking-wider uppercase font-bold transition-all duration-200">Book Appointment</button>
+<button onClick={onExploreTreatments} className="border border-cool-gray/30 text-primary hover:border-primary hover:bg-primary/5 cursor-pointer px-8 py-4 rounded-xl font-sans text-sm tracking-wider uppercase font-bold transition-all duration-200">Explore Treatments</button>
+</div>
+<div className="flex items-center gap-4 pt-4 border-t border-cool-gray/10 w-full">
+<div className="flex items-center gap-1 text-[#FBBF24]"><Star className="w-5 h-5 fill-current" /><Star className="w-5 h-5 fill-current" /><Star className="w-5 h-5 fill-current" /><Star className="w-5 h-5 fill-current" /><Star className="w-5 h-5 fill-current" /></div>
+<p className="font-sans text-xs text-on-surface-variant font-medium"><strong className="text-primary font-bold">125+ Google Reviews</strong> rated excellent by Kodungaiyur residents</p>
+</div>
+</div>
+<div className="lg:col-span-5 relative mt-12 lg:mt-0">
+<div className="relative aspect-[4/5] max-w-md mx-auto rounded-3xl overflow-hidden shadow-2xl border-4 border-white select-none group">
+<img alt="Premium dental operatory at neudental chennai" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLvMab6pshPrT48LuXq8IH2HZumT_4Z83AnNmImX8W5-zaC44Xk5KmV1m4Eh0mlhOz81SvbgKLNOcqKApeYpOxOMixk07lizVI1U75-AUzH52zRPS1hHGxdl4Yl7YFCGey9h6nhMTZ1UrmQsy1q1t5tvf5Sprm2OOuItKr-XDvNGN-m-jm-Lpi1ZTA-MJFqbOD6uRZWtoPZv9u8aK7fEF2jYoUP28RDfxWXTxI62IL3I403gtZT7JEZCfw" />
+<div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent" />
+</div>
+<div className="absolute -bottom-6 -left-6 bg-white p-5 rounded-2xl premium-shadow border border-cool-gray/10 hidden md:block max-w-[220px]">
+<div className="flex items-center gap-3"><div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center"><Award className="w-5 h-5" /></div><div className="leading-tight"><p className="text-lg font-bold text-primary font-sans">99.8%</p><p className="text-[11px] text-cool-gray font-sans font-medium uppercase tracking-wider">Sterilization Rate</p></div></div>
+</div>
+<div className="absolute -top-6 -right-6 bg-white p-5 rounded-2xl premium-shadow border border-cool-gray/10 hidden md:block max-w-[200px]">
+<div className="flex items-center gap-3"><div className="w-10 h-10 rounded-xl bg-[#EEF5FC] text-secondary flex items-center justify-center"><Sparkles className="w-5 h-5" /></div><div className="leading-tight"><p className="text-base font-bold text-primary font-sans">Lead Surgeon</p><p className="text-[11px] text-cool-gray font-sans font-medium uppercase tracking-wider">Dr. Swetha BDS, FGDS</p></div></div>
+</div>
+</div>
+</div>
+</section>
+);
+}
