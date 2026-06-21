@@ -50,3 +50,6 @@ export const FAQS: FAQItem[] = [
   { id: 'faq-4', question: 'What are your clinic timings?', answer: 'We are open Monday to Saturday: 9:00 AM - 1:00 PM and 4:00 PM - 8:00 PM. Sunday: 9:00 AM - 1:00 PM only. We are closed on Sunday evenings. You can book appointments via WhatsApp or our online form.', category: 'appointment' },
   { id: 'faq-5', question: 'How do I book an appointment?', answer: 'You can book an appointment by: (1) Using the booking form on this website, (2) WhatsApp at +91 9342367446, or (3) Calling us directly. Walk-ins are also welcome during clinic hours.', category: 'appointment' },
 ];
+
+// Alias for backward compatibility with components using DOCTORS (plural)
+export const DOCTORS = [DOCTOR];
