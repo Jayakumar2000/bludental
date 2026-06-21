@@ -134,7 +134,7 @@ export default function TreatmentDetailView({ treatmentId, onBack, onNavigateToT
         {/* Contact CTA */}
         <div className="mt-8 flex items-center justify-center gap-4">
           <a
-            href="tel:+919876543210"
+            href="tel:+919342367446"
             className="flex items-center gap-2 bg-teal-600 text-white px-6 py-3 rounded-full hover:bg-teal-700 transition-colors font-medium"
           >
             <Phone size={18} />
