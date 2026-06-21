@@ -44,7 +44,7 @@ return (
 <a href="https://google.com/maps/place/neudental" target="_blank" rel="noreferrer" className="text-xs text-secondary font-bold hover:underline inline-flex items-center gap-1 font-sans">Open in Google Maps App <ExternalLink className="w-3.5 h-3.5" /></a>
 </div>
 <div className="w-full grow min-h-[350px] rounded-2xl overflow-hidden border border-cool-gray/15 select-none bg-cool-gray/5 relative">
-<iframe title="Google map exact directions neudental clinic chennai" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m4!2s0x3a52659b841d30d3:0xc53ff4dcde940735!8m2!3d13.1309218!4d80.2535879!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52659b841d30d3%3A0xc53ff4dcde940735!2sneudental+Clinic+Kodungaiyur!5e0!3m2!1sen!2sin!4v1718503283102!5m2!1sen!2sin" className="w-full h-full border-none absolute inset-0" allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+<iframe title="Google map exact directions neudental clinic chennai" src="https://maps.google.com/maps?q=neudental+Clinic,+Vasuki+Nagar,+Kodungaiyur+East,+Chennai,+Tamil+Nadu+600118&z=17&output=embed" className="w-full h-full border-none absolute inset-0" allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
 </div>
 </div>
 </div>
